@@ -43,7 +43,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 .logo-link {
@@ -170,7 +170,6 @@ a {
   padding: 70px 0;
 }
 
-.content-section .section-title,
 .content-section h2 {
   text-align: left;
   font-size: 2.3rem;
@@ -204,14 +203,14 @@ a {
   text-decoration: underline;
 }
 
-.content-section .btn-primary {
+.register-now-btn {
   background-color: #15a9ef;
   border-color: #15a9ef;
   padding: 10px 28px;
   font-weight: 700;
 }
 
-.content-section .btn-primary:hover {
+.register-now-btn:hover {
   background-color: #0d95d4;
   border-color: #0d95d4;
 }
@@ -250,14 +249,14 @@ a {
   color: #ffffff;
 }
 
-.locations-cta .btn-info {
+.location-btn {
   background-color: #14a8ef;
   border-color: #14a8ef;
   font-weight: 700;
   padding: 11px 26px;
 }
 
-.locations-cta .btn-info:hover {
+.location-btn:hover {
   background-color: #0e93d2;
   border-color: #0e93d2;
 }
@@ -344,7 +343,6 @@ a {
     max-width: 600px;
   }
 
-  .content-section .section-title,
   .content-section h2 {
     font-size: 2rem;
   }
@@ -394,7 +392,6 @@ a {
     padding: 50px 0;
   }
 
-  .content-section .section-title,
   .content-section h2 {
     font-size: 1.9rem;
   }
