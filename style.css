@@ -1,6 +1,3 @@
-/* =========================
-   GLOBAL
-========================= */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,129 +12,114 @@ img {
   display: block;
 }
 
-a {
-  transition: 0.3s ease;
-}
-
-.section-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
 .container {
-  max-width: 1100px;
+  max-width: 1180px;
 }
 
-/* =========================
-   HEADER
-========================= */
 .site-header {
-  background-color: #233746;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
+  background: rgba(35, 55, 70, 0.88);
 }
 
 .navbar-custom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 14px 0;
-}
-
-.logo-link {
-  display: inline-block;
+  justify-content: space-between;
+  min-height: 78px;
 }
 
 .logo-img {
-  height: 58px;
+  height: 52px;
   width: auto;
 }
 
-.menu-btn {
-  background: none;
-  border: none;
-  color: #f4f4f4;
-  font-size: 2.2rem;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0;
-  box-shadow: none;
-  outline: none;
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
 }
 
-.menu-btn:focus {
-  outline: none;
+.desktop-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.desktop-nav a:hover {
+  color: #d6f2ff;
+  text-decoration: none;
+}
+
+.desktop-register-btn {
+  background: #ffffff;
+  color: #169fe6 !important;
+  border-radius: 28px;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
 }
 
 .mobile-menu {
   display: none;
-  padding: 10px 0 22px;
-}
-
-.mobile-menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-.mobile-menu li {
-  margin-bottom: 12px;
-}
-
-.mobile-menu li:last-child {
-  margin-bottom: 0;
+  padding: 8px 0 18px;
 }
 
 .mobile-menu a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
   display: block;
-  font-size: 1rem;
-}
-
-.mobile-menu a:hover {
-  color: #cdeeff;
-  text-decoration: none;
+  padding: 8px 0;
+  font-weight: 600;
 }
 
 .register-btn {
   background-color: #ffffff;
   color: #169fe6 !important;
   border-radius: 30px;
-  padding: 12px 20px !important;
+  padding: 10px 18px !important;
   text-align: center;
-  width: 240px;
-  font-weight: 700;
+  width: 220px;
 }
 
-/* =========================
-   HERO
-========================= */
 .hero-section {
   background-size: cover;
   background-position: center;
-  min-height: 430px;
+  min-height: 540px;
   position: relative;
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.28);
-  min-height: 430px;
+  background: rgba(0, 0, 0, 0.2);
+  min-height: 540px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 78px;
 }
 
 .hero-section h1 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero-buttons .btn {
@@ -146,9 +128,6 @@ a {
   border: none;
 }
 
-/* =========================
-   REGISTER STRIP
-========================= */
 .register-strip {
   background-color: #c86b13;
   color: #ffffff;
@@ -162,9 +141,6 @@ a {
   font-weight: 400;
 }
 
-/* =========================
-   CONTENT SECTION
-========================= */
 .content-section {
   background-color: #f3f3f3;
   padding: 70px 0;
@@ -172,7 +148,7 @@ a {
 
 .content-section h2 {
   text-align: left;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -194,10 +170,6 @@ a {
   margin-bottom: 20px;
 }
 
-.content-section li {
-  margin-bottom: 6px;
-}
-
 .content-section a {
   color: #169fe6;
   text-decoration: underline;
@@ -210,18 +182,9 @@ a {
   font-weight: 700;
 }
 
-.register-now-btn:hover {
-  background-color: #0d95d4;
-  border-color: #0d95d4;
-}
-
-/* =========================
-   LOCATIONS CTA
-========================= */
 .locations-cta {
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .overlay-dark {
@@ -237,7 +200,7 @@ a {
 }
 
 .locations-cta h2 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 18px;
   color: #ffffff;
@@ -256,21 +219,16 @@ a {
   padding: 11px 26px;
 }
 
-.location-btn:hover {
-  background-color: #0e93d2;
-  border-color: #0e93d2;
-}
-
-/* =========================
-   AWARDS
-========================= */
 .awards-section {
   background-color: #efefef;
   padding: 70px 0;
 }
 
-.awards-section .section-title {
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .award-img {
@@ -280,9 +238,6 @@ a {
   margin: 0 auto;
 }
 
-/* =========================
-   FOOTER
-========================= */
 .site-footer {
   background-size: cover;
   background-position: center;
@@ -290,18 +245,18 @@ a {
 }
 
 .footer-overlay {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 55px 0;
 }
 
 .footer-logo {
-  max-width: 260px;
-  margin: 0 auto 30px;
+  max-width: 230px;
+  margin: 0 auto 28px;
 }
 
 .footer-links {
   padding-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .footer-links li {
@@ -312,71 +267,67 @@ a {
   color: #333;
   font-weight: 700;
   text-decoration: underline;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
-.footer-links a:hover {
-  color: #169fe6;
+.footer-phones {
+  border-top: 1px solid rgba(0,0,0,0.12);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding: 22px 0 8px;
+  margin-top: 10px;
 }
 
-.site-footer p {
-  margin-bottom: 14px;
+.footer-phones strong {
+  display: block;
 }
 
 .sponsor-logos img {
-  max-height: 65px;
+  max-height: 56px;
   width: auto;
   margin: 10px 12px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 @media (max-width: 991px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
   .hero-section,
   .hero-overlay {
-    min-height: 380px;
+    min-height: 420px;
   }
 
   .hero-section h1 {
     font-size: 2.4rem;
-    max-width: 600px;
-  }
-
-  .content-section h2 {
-    font-size: 2rem;
-  }
-
-  .locations-cta h2 {
-    font-size: 2rem;
-  }
-
-  .award-img {
-    max-height: 180px;
+    max-width: 620px;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-custom {
-    padding: 14px 0;
-  }
-
   .logo-img {
-    height: 50px;
+    height: 46px;
   }
 
-  .menu-btn {
-    font-size: 2rem;
+  .navbar-custom {
+    min-height: 72px;
   }
 
   .hero-section,
   .hero-overlay {
-    min-height: 300px;
+    min-height: 320px;
+  }
+
+  .hero-overlay {
+    padding-top: 72px;
   }
 
   .hero-section h1 {
     font-size: 1.9rem;
-    max-width: 90%;
+    max-width: 92%;
   }
 
   .hero-buttons .btn {
@@ -393,32 +344,24 @@ a {
   }
 
   .content-section h2 {
-    font-size: 1.9rem;
-  }
-
-  .overlay-dark {
-    padding: 55px 20px;
+    font-size: 2rem;
   }
 
   .locations-cta h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
-  .awards-section {
-    padding: 55px 0;
+  .section-title {
+    font-size: 2rem;
   }
 
   .award-img {
     max-height: 150px;
   }
 
-  .footer-logo {
-    max-width: 210px;
-  }
-
   .footer-links li {
     display: block;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
   }
 
   .register-btn {
