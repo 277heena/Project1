@@ -1,0 +1,187 @@
+sign-in.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO and responsive tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Register or sign in for Splashes Swim School lessons and programs.">
+  <meta name="keywords" content="Splashes register, sign in, swim lessons registration">
+  <meta name="author" content="Splashes Swim School">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Splashes Swim School | Register / Sign In</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar-custom">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo-img">
+        </a>
+
+        <button id="menu-toggle" class="menu-btn" type="button" aria-label="Open navigation menu">
+          &#9776;
+        </button>
+
+        <ul id="main-menu" class="main-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="swim-lessons.html">Swimming Lessons</a></li>
+          <li><a href="swim-programs.html">Swim Programs</a></li>
+          <li><a href="adult-programs.html">Adult Programs</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign-in.html" class="nav-register-btn">Register / Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="inner-hero" style="background-image: url('images/home.jpeg');">
+    <div class="inner-hero-overlay">
+      <div class="container">
+        <h1>Register / Sign In</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register / Sign In Section -->
+  <section class="page-section">
+    <div class="container">
+      <h2>Start Your Swim Journey</h2>
+
+      <p>
+        Use this page to register interest in swim lessons, request program information, or sign in
+        to continue with Splashes Swim School.
+      </p>
+
+      <div class="row mt-4">
+        <div class="col-lg-6 mb-4">
+          <div class="form-box h-100">
+            <h3>New Student Registration</h3>
+
+            <form>
+              <!-- Parent or student name -->
+              <div class="form-group">
+                <label for="studentName">Parent / Student Name</label>
+                <input type="text" class="form-control" id="studentName" placeholder="Enter name">
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="registerEmail">Email Address</label>
+                <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+              </div>
+
+              <!-- Program select -->
+              <div class="form-group">
+                <label for="registerProgram">Program</label>
+                <select class="form-control" id="registerProgram">
+                  <option>Private Swimming Lessons</option>
+                  <option>Semi-Private Swimming Lessons</option>
+                  <option>Parent &amp; Me Lessons</option>
+                  <option>Swim Programs</option>
+                  <option>Adult Programs</option>
+                </select>
+              </div>
+
+              <!-- Button requirement -->
+              <button type="submit" class="btn btn-primary rounded-pill register-now-btn">
+                Submit Registration
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="form-box h-100">
+            <h3>Returning Student Sign In</h3>
+
+            <form>
+              <!-- Email login -->
+              <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+              </div>
+
+              <!-- Password login -->
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Enter password">
+              </div>
+
+              <!-- Remember me checkbox -->
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+
+              <button type="submit" class="btn btn-info rounded-pill">
+                Sign In
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Badge / Progress Component -->
+  <section class="page-section bg-light">
+    <div class="container">
+      <h2>Registration Progress</h2>
+
+      <p>
+        Complete the form, choose a program, and a Splashes team member will follow up.
+      </p>
+
+      <span class="badge badge-info mb-3">Step 1: Submit Form</span>
+      <span class="badge badge-primary mb-3">Step 2: Choose Class</span>
+      <span class="badge badge-success mb-3">Step 3: Start Swimming</span>
+
+      <div class="progress mt-3">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
+          66%
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="background-image: url('images/footer-bg.jpeg');">
+    <div class="footer-overlay">
+      <div class="container text-center">
+        <img src="images/footer-logo-wave-small.png" alt="Splashes footer logo" class="footer-logo">
+
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="sign-in.html">Register / Sign In</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+
+        <p class="copyright">© 2022 Splashes. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery, Bootstrap, Vue, and custom JS files -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

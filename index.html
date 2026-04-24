@@ -1,167 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Splashes | Home</title>
-  <meta name="description" content="Splashes swim school home page" />
+  <!-- Basic SEO and responsive tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Splashes Swim School provides swim lessons and aquatic programs for children and adults.">
+  <meta name="keywords" content="Splashes, swim school, swimming lessons, kids swim lessons, adult swim programs">
+  <meta name="author" content="Splashes Swim School">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Splashes Swim School | Home</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- Header over hero -->
+  <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container">
-      <div class="navbar-custom">
+      <nav class="navbar-custom">
         <a href="index.html" class="logo-link">
-          <img src="images/logo-small.png" alt="Splashes logo" class="logo-img">
+          <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo-img">
         </a>
 
-        <!-- Desktop Nav -->
-        <nav class="desktop-nav">
-          <a href="about.html">About</a>
-          <a href="swim-lessons.html">Swimming Lessons</a>
-          <a href="swim-programs.html">Swim Programs</a>
-          <a href="adult-programs.html">Adult Programs</a>
-          <a href="locations.html">Locations</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="sign-in.html" class="desktop-register-btn">Register / Sign In</a>
-        </nav>
-
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="menu-btn" type="button" aria-label="Open menu">
+        <button id="menu-toggle" class="menu-btn" type="button" aria-label="Open navigation menu">
           &#9776;
         </button>
-      </div>
 
-      <!-- Mobile Nav -->
-      <nav id="mobile-menu" class="mobile-menu">
-        <ul class="list-unstyled mb-0">
+        <ul id="main-menu" class="main-menu">
           <li><a href="about.html">About</a></li>
           <li><a href="swim-lessons.html">Swimming Lessons</a></li>
           <li><a href="swim-programs.html">Swim Programs</a></li>
           <li><a href="adult-programs.html">Adult Programs</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="sign-in.html" class="register-btn">Register / Sign In</a></li>
+          <li><a href="sign-in.html" class="nav-register-btn">Register / Sign In</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero-section" style="background-image: url('images/home.jpeg');">
+  <!-- Hero Section -->
+  <section class="home-hero" style="background-image: url('images/home.jpeg');">
     <div class="hero-overlay">
       <div class="container text-center">
         <h1>Learning it the Right Way,<br>Right from the Beginning</h1>
 
-        <div class="hero-buttons mt-4">
-          <a href="#" class="btn btn-light rounded-pill px-4 py-2 mr-md-2 mb-2">Informational Video</a>
-          <a href="#" class="btn btn-light rounded-pill px-4 py-2 mb-2">Swimvenger Video</a>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-light rounded-pill">Informational Video</a>
+          <a href="#" class="btn btn-light rounded-pill">Swimvenger Video</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Register Banner -->
-  <section class="py-4 bg-light">
+  <!-- Register Section -->
+  <section class="register-section">
     <div class="container">
-      <div class="register-strip mb-3">
+      <div class="register-banner">
         <h2>Register Online Here</h2>
       </div>
 
-      <img src="images/ww-site-hiring-banner-resized.png" alt="Now hiring banner" class="img-fluid w-100">
+      <div class="alert alert-info mt-4 text-center" role="alert">
+        New students can register online for swim lessons and programs.
+      </div>
     </div>
   </section>
 
-  <!-- Hands On Teaching -->
+  <!-- Hands On Teaching Section -->
   <section class="content-section">
     <div class="container">
       <h2>Hands On Teaching</h2>
 
       <p>
         Splashes Swim School provides high quality swim instruction and the ideal environment for
-        learning how to swim. Our swim instructors use specialized “muscle memory” teaching
-        techniques that help our students progress at a quick rate. Grouped by age and ability,
-        our students benefit from swim classes that offer personalized attention. It’s never too
-        late to learn to swim!
+        learning how to swim. Our swim instructors use specialized muscle memory teaching techniques
+        that help students progress at a quick rate.
       </p>
 
-      <h5>Splashes Offers:</h5>
+      <p>
+        Grouped by age and ability, our students benefit from swim classes that offer personalized
+        attention. It is never too late to learn to swim.
+      </p>
+
+      <h3>Splashes Offers:</h3>
 
       <ul>
         <li><a href="swim-lessons.html">Private Swimming Lessons</a> - All Locations</li>
         <li><a href="swim-lessons.html">Semi-Private Swimming Lessons</a> - All Locations</li>
-        <li><a href="swim-lessons.html">Parent &amp; Me (Baby) Swimming Lessons</a> - Select Locations</li>
+        <li><a href="swim-lessons.html">Parent &amp; Me Swimming Lessons</a> - Select Locations</li>
       </ul>
 
       <p>
-        Select locations also offer additional swim programs such as swim competitions, swim teams,
-        water aerobics, aquatic therapy, swim camps and more! To learn more about the Waterworks
-        Family Swim School near you, select a location below.
+        Select locations also offer swim programs such as swim competitions, swim teams,
+        water aerobics, aquatic therapy, swim camps, and more.
       </p>
 
-      <p>Ready to sign up?</p>
+      <a href="sign-in.html" class="btn btn-primary rounded-pill register-now-btn">Register Now</a>
+    </div>
+  </section>
 
-      <a href="sign-in.html" class="btn btn-primary rounded-pill register-now-btn">REGISTER NOW</a>
+  <!-- Bootstrap Cards Section -->
+  <section class="program-preview-section">
+    <div class="container">
+      <h2 class="section-title">Our Popular Programs</h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 program-card">
+            <div class="card-body">
+              <h3 class="card-title">Swimming Lessons</h3>
+              <p class="card-text">
+                Lessons for children of different ages and skill levels with trained instructors.
+              </p>
+              <a href="swim-lessons.html" class="btn btn-outline-info rounded-pill">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 program-card">
+            <div class="card-body">
+              <h3 class="card-title">Swim Programs</h3>
+              <p class="card-text">
+                Additional swim programs designed to build confidence, strength, and safety.
+              </p>
+              <a href="swim-programs.html" class="btn btn-outline-info rounded-pill">View Programs</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 program-card">
+            <div class="card-body">
+              <h3 class="card-title">Adult Programs</h3>
+              <p class="card-text">
+                Adult swim classes for beginners and swimmers looking to improve technique.
+              </p>
+              <a href="adult-programs.html" class="btn btn-outline-info rounded-pill">Start Today</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Locations CTA -->
   <section class="locations-cta" style="background-image: url('images/home-our-locations-bg.jpeg');">
-    <div class="overlay-dark text-center">
-      <div class="container">
+    <div class="locations-overlay">
+      <div class="container text-center">
         <p class="small-heading">Find a Splashes Swim School near you</p>
         <h2>Family Swim School Locations</h2>
         <p>
-          Splashes offers the finest professional swimming lessons from 21 swim schools and aquatic
-          centers in California and Denver.
+          Splashes offers professional swimming lessons from multiple swim schools and aquatic centers.
         </p>
-        <a href="locations.html" class="btn btn-info rounded-pill location-btn">Find a Location Near You</a>
+        <a href="locations.html" class="btn btn-info rounded-pill">Find a Location Near You</a>
       </div>
     </div>
   </section>
 
-  <!-- Awards -->
+  <!-- jQuery Ajax FAQ Section -->
+  <section class="faq-section">
+    <div class="container text-center">
+      <h2 class="section-title">Quick FAQs</h2>
+      <p>Click the button below to load FAQs using jQuery Ajax.</p>
+
+      <button id="load-faqs" class="btn btn-primary rounded-pill">Load FAQs</button>
+
+      <div id="faq-results" class="faq-results mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Vue Component Section -->
+  <section class="vue-section">
+    <div class="container text-center">
+      <h2 class="section-title">Find Your Swim Level</h2>
+
+      <div id="vue-app" class="vue-box">
+        <p>Select your comfort level in water:</p>
+
+        <select v-model="level" class="form-control mx-auto level-select">
+          <option disabled value="">Choose one</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+
+        <p class="vue-message mt-3" v-if="level">
+          Recommended Program: {{ level }} Swim Class
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
   <section class="awards-section">
     <div class="container">
       <h2 class="section-title">Awards We've Won</h2>
 
       <div class="row justify-content-center text-center">
         <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/colorado-parenting-family-fav2021.png" alt="Colorado Parenting Family Favorites 2021" class="award-img">
+          <img src="images/awards/colorado-parenting-family-fav2021.png" alt="Colorado Parenting Award" class="award-img">
         </div>
+
         <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/bay-area-parent-gold2020.png" alt="Bay Area Parent Family Favorite 2020" class="award-img">
+          <img src="images/awards/bay-area-parent-gold2020.png" alt="Bay Area Parent Award" class="award-img">
         </div>
+
         <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/mla-swim-lessons-winner-2020-250x250.png" alt="Most loved swim lessons 2020" class="award-img">
+          <img src="images/awards/mla-swim-lessons-winner-2020-250x250.png" alt="Most Loved Swim Lessons Award" class="award-img">
         </div>
+
         <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/colorado-parenting-family-fav2020.png" alt="Colorado Parenting Family Favorites 2020" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/website-parenting-oc-2019.jpeg" alt="Parenting OC 2019" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/colorado-parenting-family-fav2019.jpeg" alt="Colorado Parenting Family Favorites 2019" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/bay-area-parent-2019.jpeg" alt="Bay Area Parent 2019" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/best-of-la-kids-winner.jpeg" alt="Best of LA Kids winner" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/gold-daisy-award-finalist-2018.jpeg" alt="Gold Daisy Award Finalist 2018" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/best-of-the-best-2018.jpeg" alt="Best of the Best 2018" class="award-img">
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <img src="images/awards/best-colorado-community-media-2021.jpeg" alt="Best Colorado Community Media 2021" class="award-img">
+          <img src="images/awards/colorado-parenting-family-fav2020.png" alt="Family Favorite Award" class="award-img">
         </div>
       </div>
     </div>
@@ -173,47 +228,53 @@
       <div class="container text-center">
         <img src="images/footer-logo-wave-small.png" alt="Splashes footer logo" class="footer-logo">
 
-        <ul class="footer-links list-inline">
-          <li class="list-inline-item"><a href="about.html">About</a></li>
-          <li class="list-inline-item"><a href="locations.html">Locations</a></li>
-          <li class="list-inline-item"><a href="#">FAQs</a></li>
-          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-          <li class="list-inline-item"><a href="sign-in.html">Register / Sign In</a></li>
-          <li class="list-inline-item"><a href="#">Careers</a></li>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="sign-in.html">Register / Sign In</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
 
-        <div class="footer-phones row text-center">
-          <div class="col-6 col-md mb-3">
-            <strong>Orange County</strong><br>(949) 450-0777
+        <div class="footer-phones row">
+          <div class="col-6 col-md">
+            <strong>Orange County</strong><br>
+            (949) 450-0777
           </div>
-          <div class="col-6 col-md mb-3">
-            <strong>San Diego County</strong><br>(760) 603-9400
+
+          <div class="col-6 col-md">
+            <strong>San Diego County</strong><br>
+            (760) 603-9400
           </div>
-          <div class="col-6 col-md mb-3">
-            <strong>Los Angeles County</strong><br>(626) 836-1200
+
+          <div class="col-6 col-md">
+            <strong>Los Angeles County</strong><br>
+            (626) 836-1200
           </div>
-          <div class="col-6 col-md mb-3">
-            <strong>Northern California</strong><br>(408) 279-1700
+
+          <div class="col-6 col-md">
+            <strong>Northern California</strong><br>
+            (408) 279-1700
           </div>
-          <div class="col-12 col-md mb-3">
-            <strong>Denver</strong><br>(720) 344-7700
+
+          <div class="col-12 col-md">
+            <strong>Denver</strong><br>
+            (720) 344-7700
           </div>
         </div>
 
-        <div class="d-flex flex-wrap justify-content-center align-items-center sponsor-logos mt-4 mb-4">
-          <img src="images/sponsors/footer-member-issa-logo.png" alt="ISSA member logo">
-          <img src="images/sponsors/footer-ndpa-logo.png" alt="NDPA logo">
-          <img src="images/sponsors/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now logo">
-          <img src="images/sponsors/footer-usssa-logo-2.png" alt="USSSA logo">
-        </div>
-
-        <p>© 2022 Splashes. All Rights Reserved</p>
+        <p class="copyright">© 2022 Splashes. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
+  <!-- jQuery, Bootstrap, Vue, and custom JS files -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
   <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

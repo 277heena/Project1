@@ -1,0 +1,566 @@
+/* =========================
+   Global Styles
+========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #159bd3;
+}
+
+a:hover {
+  color: #0f7fae;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1180px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   Header / Navigation
+========================= */
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(25, 45, 58, 0.9);
+}
+
+.navbar-custom {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 58px;
+  width: auto;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li {
+  margin: 0;
+}
+
+.main-menu a {
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-menu a:hover {
+  color: #d7f3ff;
+}
+
+.nav-register-btn {
+  background-color: #ffffff;
+  color: #159bd3 !important;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* =========================
+   Home Hero
+========================= */
+
+.home-hero {
+  min-height: 560px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  min-height: 560px;
+  background-color: rgba(0, 0, 0, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 82px;
+}
+
+.home-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+
+.hero-buttons {
+  margin-top: 28px;
+}
+
+.hero-buttons .btn {
+  min-width: 190px;
+  margin: 6px;
+  font-weight: 700;
+  color: #159bd3;
+}
+
+/* =========================
+   Register Section
+========================= */
+
+.register-section {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.register-banner {
+  background-color: #c96d16;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.register-banner h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+.content-section {
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+
+.content-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.content-section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.content-section p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.content-section ul {
+  padding-left: 22px;
+  margin-bottom: 24px;
+}
+
+.register-now-btn {
+  background-color: #159bd3;
+  border-color: #159bd3;
+  padding: 11px 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* =========================
+   Program Cards
+========================= */
+
+.program-preview-section {
+  background-color: #f3f8fb;
+  padding: 70px 0;
+}
+
+.program-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.14);
+}
+
+.program-card h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+/* =========================
+   Locations CTA
+========================= */
+
+.locations-cta {
+  background-size: cover;
+  background-position: center;
+}
+
+.locations-overlay {
+  background-color: rgba(9, 29, 43, 0.68);
+  padding: 78px 20px;
+  color: #ffffff;
+}
+
+.locations-cta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.locations-cta p {
+  max-width: 760px;
+  margin: 0 auto 24px;
+}
+
+.small-heading {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   FAQ / jQuery Ajax
+========================= */
+
+.faq-section {
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+
+.faq-results {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #f3f8fb;
+  border-left: 5px solid #159bd3;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.faq-item h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Vue Section
+========================= */
+
+.vue-section {
+  background-color: #f4f4f4;
+  padding: 70px 0;
+}
+
+.vue-box {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.level-select {
+  max-width: 320px;
+}
+
+.vue-message {
+  color: #159bd3;
+  font-weight: 700;
+}
+
+/* =========================
+   Awards
+========================= */
+
+.awards-section {
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+
+.award-img {
+  max-height: 170px;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-overlay {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 55px 0;
+}
+
+.footer-logo {
+  max-width: 230px;
+  margin: 0 auto 28px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: #333333;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.footer-phones {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 24px 0 14px;
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+}
+
+.footer-phones div {
+  margin-bottom: 12px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* =========================
+   Generic Inner Pages
+========================= */
+
+.inner-hero {
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.inner-hero-overlay {
+  min-height: 320px;
+  background-color: rgba(0, 0, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 82px;
+  text-align: center;
+}
+
+.inner-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+
+.page-section {
+  padding: 70px 0;
+}
+
+.page-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.info-table {
+  background-color: #ffffff;
+}
+
+/* =========================
+   Forms
+========================= */
+
+.form-box {
+  background-color: #f3f8fb;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .main-menu {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(25, 45, 58, 0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 18px 28px 24px;
+  }
+
+  .main-menu.show {
+    display: flex;
+  }
+
+  .main-menu li {
+    width: 100%;
+  }
+
+  .main-menu a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav-register-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px !important;
+  }
+
+  .home-hero,
+  .hero-overlay {
+    min-height: 430px;
+  }
+
+  .home-hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .locations-cta h2,
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-custom {
+    min-height: 74px;
+  }
+
+  .main-menu {
+    top: 74px;
+  }
+
+  .logo-img {
+    height: 48px;
+  }
+
+  .home-hero,
+  .hero-overlay {
+    min-height: 360px;
+  }
+
+  .hero-overlay {
+    padding-top: 74px;
+  }
+
+  .home-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-buttons .btn {
+    min-width: 170px;
+    font-size: 0.9rem;
+  }
+
+  .register-banner h2 {
+    font-size: 1.7rem;
+  }
+
+  .content-section,
+  .program-preview-section,
+  .faq-section,
+  .vue-section,
+  .awards-section,
+  .page-section {
+    padding: 50px 0;
+  }
+
+  .content-section h2,
+  .page-section h2 {
+    font-size: 2rem;
+  }
+
+  .inner-hero,
+  .inner-hero-overlay {
+    min-height: 250px;
+  }
+
+  .inner-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

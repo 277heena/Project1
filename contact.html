@@ -1,0 +1,172 @@
+contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO and responsive tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Splashes Swim School for swimming lessons, locations, and program information.">
+  <meta name="keywords" content="contact Splashes, swim school contact, swimming lesson inquiry">
+  <meta name="author" content="Splashes Swim School">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Splashes Swim School | Contact</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar-custom">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo-img">
+        </a>
+
+        <button id="menu-toggle" class="menu-btn" type="button" aria-label="Open navigation menu">
+          &#9776;
+        </button>
+
+        <ul id="main-menu" class="main-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="swim-lessons.html">Swimming Lessons</a></li>
+          <li><a href="swim-programs.html">Swim Programs</a></li>
+          <li><a href="adult-programs.html">Adult Programs</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign-in.html" class="nav-register-btn">Register / Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="inner-hero" style="background-image: url('images/contact-hero.jpeg');">
+    <div class="inner-hero-overlay">
+      <div class="container">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="page-section">
+    <div class="container">
+      <h2>Send Us a Message</h2>
+
+      <p>
+        Fill out the form below and a Splashes team member will contact you about lessons,
+        programs, or locations.
+      </p>
+
+      <div class="row mt-4">
+        <div class="col-lg-7 mb-4">
+          <form class="form-box">
+            <!-- Name input -->
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+
+            <!-- Email input -->
+            <div class="form-group">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email">
+            </div>
+
+            <!-- Program select -->
+            <div class="form-group">
+              <label for="programInterest">Program Interest</label>
+              <select class="form-control" id="programInterest">
+                <option>Swimming Lessons</option>
+                <option>Swim Programs</option>
+                <option>Adult Programs</option>
+                <option>Locations</option>
+              </select>
+            </div>
+
+            <!-- Message textarea -->
+            <div class="form-group">
+              <label for="messageBox">Message</label>
+              <textarea class="form-control" id="messageBox" rows="5" placeholder="Write your message here"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary rounded-pill register-now-btn">
+              Submit Form
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="form-box">
+            <h3>Contact Information</h3>
+
+            <p>
+              <strong>Orange County:</strong><br>
+              (949) 450-0777
+            </p>
+
+            <p>
+              <strong>San Diego County:</strong><br>
+              (760) 603-9400
+            </p>
+
+            <p>
+              <strong>Los Angeles County:</strong><br>
+              (626) 836-1200
+            </p>
+
+            <p>
+              <strong>Denver:</strong><br>
+              (720) 344-7700
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Alert Section -->
+  <section class="page-section bg-light">
+    <div class="container">
+      <div class="alert alert-info text-center" role="alert">
+        Thank you for your interest in Splashes Swim School. We look forward to helping you find the right swim program.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="background-image: url('images/footer-bg.jpeg');">
+    <div class="footer-overlay">
+      <div class="container text-center">
+        <img src="images/footer-logo-wave-small.png" alt="Splashes footer logo" class="footer-logo">
+
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="sign-in.html">Register / Sign In</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+
+        <p class="copyright">© 2022 Splashes. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery, Bootstrap, Vue, and custom JS files -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

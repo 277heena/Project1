@@ -1,0 +1,15 @@
+faqs.json
+[
+  {
+    "question": "What age can children start swim lessons?",
+    "answer": "Children can start at different ages depending on comfort level, location, and class availability."
+  },
+  {
+    "question": "Do you offer private lessons?",
+    "answer": "Yes. Splashes offers private and semi-private swimming lessons at multiple locations."
+  },
+  {
+    "question": "Are adult swim classes available?",
+    "answer": "Yes. Adult programs are available for beginners and swimmers who want to improve technique."
+  }
+]
