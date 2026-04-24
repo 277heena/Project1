@@ -564,3 +564,33 @@ a:hover {
     gap: 8px;
   }
 }
+
+/* Awards Section */
+.awards-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.awards-section .section-title {
+  color: #00529B;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.awards-row {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.award-img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.award-img:hover {
+  transform: scale(1.05);
+}
